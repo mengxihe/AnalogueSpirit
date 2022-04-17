@@ -14,8 +14,8 @@ function buildGrid(x, cellSize, gridElement) {
     gridElement.appendChild(squares);
   }
   
-  let grid = document.querySelector('.grid')
+  let grid = document.querySelector('.container')
 
   
-  buildGrid(16, 25, grid);
+  buildGrid(25, 25, grid);
   
