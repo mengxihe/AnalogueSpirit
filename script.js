@@ -1,22 +1,17 @@
-function buildGrid(x, cellSize, gridElement) {
-    gridElement.style.display = "grid";
-    gridElement.style.gridTemplateColumns = `repeat(${x}, ${cellSize}px)`;
-    gridElement.style.gridTemplateRows = `repeat(${x}, ${cellSize}px)`;
-   
-    let squares = new DocumentFragment();
-  
+
+
+function buildGrid(x) {
+    grid.style.display = "grid";
+    grid.style.gridTemplateColumns = `repeat(${x}, 1fr)`;
+    grid.style.gridTemplateRows = `repeat(${x}, 1fr)`;
+
     for (let i = 0; i < x * x; i++) {
       let square = document.createElement('div');
-      square.className = 'square';
-      squares.appendChild(square);
+      square.classList.add('square');
+      grid.appendChild(square);
     }
-  
-    gridElement.appendChild(squares);
   }
-  
 
-
-  
 
 //   console.log(square);
 
@@ -25,10 +20,12 @@ function changeColor(e) {
     // console.log(e)
     if (e.type === 'mouseover' && !mouseDown) return
     this.classList.add('black');
-    
   }
+
+
+
 let grid = document.querySelector('.container')
-buildGrid(16, 25, grid);
+buildGrid(16);
 
 let square = document.querySelectorAll('.square');
 let mouseDown = false;
