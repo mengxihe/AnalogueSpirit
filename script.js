@@ -14,8 +14,26 @@ function buildGrid(x, cellSize, gridElement) {
     gridElement.appendChild(squares);
   }
   
-  let grid = document.querySelector('.container')
+
 
   
-  buildGrid(25, 25, grid);
-  
+
+//   console.log(square);
+
+function changeColor(e) {
+    
+    // console.log(e)
+    if (e.type === 'mouseover' && !mouseDown) return
+    this.classList.add('black');
+    
+  }
+let grid = document.querySelector('.container')
+buildGrid(16, 25, grid);
+
+let square = document.querySelectorAll('.square');
+let mouseDown = false;
+document.body.onmousedown = () => (mouseDown = true)
+document.body.onmouseup = () => (mouseDown = false)
+console.log(document.body.onmousedown);
+square.forEach(square => square.addEventListener('mousedown', changeColor))
+square.forEach(square => square.addEventListener('mouseover', changeColor))
