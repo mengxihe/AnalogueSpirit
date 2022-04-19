@@ -23,11 +23,6 @@ function buildGrid(x) {
     }
 }
 
-function clickCount() {
-    click += 1;
-    console.log(click)
-}
-
 function changeColor(e) {
     // console.log(e.target.style.backgroundColor);
     
@@ -144,4 +139,3 @@ colorPicker.oninput = function(){
 const shaderBtn = document.querySelector('.shader');
 shaderBtn.onclick = () => setCurrentMode('shade');
 
-// let click = 0;
