@@ -11,9 +11,12 @@
 <body>
     <div id="headers">
         <h1>Analogue Spirit</h1>
-        <button class = "clear">Clear</button>
+        <button class = "clear">Restart</button>
+        <button class = "BW">BW</button>
+        <button class = "eraser">Eraser</button>
         <div class = 'density'>
-            <input type = 'range' min = '16' max = '100' value="16" class="slider" id ="myRange">
+            <input id = "slider" type = 'range' min = '16' max = '100' value="16" class="slider" id ="myRange">
+            <p>Grid Density: <span id = 'sliderValue'></span></p>
         </div>
     </div>
 
