@@ -1,5 +1,7 @@
+
+
 .square {
-    background-color:rgb(255, 255, 255);
+    
     border:0.2px solid #ebebeb;
 }
 
@@ -9,8 +11,9 @@
     height: 500px;
     background-color: var(--secondary-light);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
+    }
 
 .black {
     background-color: black;
 }
+
