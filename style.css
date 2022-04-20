@@ -4,9 +4,29 @@
     --secondary-light: #fefefe;
 }
 
+body{
+    font-family: Helvetica, sans-serif;
+}
+
+
 .square {
     
     border:0.2px solid #ebebeb;
+}
+
+h1{
+    line-height: 1.2;
+}
+
+button,
+input {
+    width: 100%;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
 }
 
 .container {
@@ -21,3 +41,12 @@
     background-color: black;
 }
 
+
+button {
+    padding: 10px 20px;
+    border: 0.5px solid var(--primary-dark);
+    border-radius: 5px;
+}
+
+
+//dfdfdf
