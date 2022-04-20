@@ -1,4 +1,8 @@
-
+:root{
+    --primary-dark: #333;
+    --primary-light: #ededed;
+    --secondary-light: #fefefe;
+}
 
 .square {
     
