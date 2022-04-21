@@ -92,6 +92,7 @@ function reload (){
 }
 
 function setCurrentMode (newMode) {
+    activateButton(newMode);
     currentMode = newMode;
 }
 
@@ -139,8 +140,29 @@ colorPicker.oninput = function(){
 const shaderBtn = document.querySelector('.shader');
 shaderBtn.onclick = () => setCurrentMode('shade');
 
+function activateButton(newMode) {
+    if (currentMode === 'rainbow') {
+        rainbowBtn.classList.remove('active');
+    } else if (currentMode === 'color') {
+        colorBtn.classList.remove('active');
+    } else if (currentMode === 'erase') {
+        eraserBtn.classList.remove('active');
+    } else if (currentMode === 'shade') {
+        shaderBtn.classList.remove('active');
+    }
+
+    if (newMode === 'rainbow') {
+        rainbowBtn.classList.add('active');
+    } else if (newMode === 'color') {
+        colorBtn.classList.add('active');
+    } else if (newMode === 'erase') {
+        eraserBtn.classList.add('active');
+    } else if (newMode === 'shade') {
+        shaderBtn.classList.add('active');
+    }
+}
 
 window.onload = () => {
-    setupGrid(DEFAULT_SIZE)
+    buildGrid(DEFAULT_SIZE)
     activateButton(DEFAULT_MODE)
 }
