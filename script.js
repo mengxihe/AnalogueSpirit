@@ -163,6 +163,6 @@ function activateButton(newMode) {
 }
 
 window.onload = () => {
-    buildGrid(DEFAULT_SIZE)
+
     activateButton(DEFAULT_MODE)
 }
