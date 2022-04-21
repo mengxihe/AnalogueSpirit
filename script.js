@@ -13,9 +13,11 @@ function buildGrid(x) {
     for (let i = 0; i < x * x; i++) {
         let square = document.createElement('div');
         square.classList.add('square');
-        square.addEventListener('mousedown', changeColor)
-        square.addEventListener('mouseover', changeColor)
-        square.style = 'background-color: rgba(255, 255, 255, 1)'
+        square.addEventListener('mousedown', changeColor);
+        square.addEventListener('mouseover', changeColor);
+        square.addEventListener('touchstart', changeColor);
+        square.addEventListener('touchmove', changeColor);
+        square.style = 'background-color: rgba(255, 255, 255, 1)';
         grid.appendChild(square);
         square.dataset.darken = 0;
         
@@ -65,7 +67,7 @@ function changeColor(e) {
         currentDarkeningStep ++
         e.target.dataset.darken = currentDarkeningStep;
         
-        this.style.backgroundColor = `rgba(${newRed}, ${newGreen}, ${newBlue}, ${newAlpha})`
+        this.style.backgroundColor = `rgba(${newRed}, ${newGreen}, ${newBlue}, ${newAlpha})`;
         
         } 
     }
@@ -164,5 +166,5 @@ function activateButton(newMode) {
 
 window.onload = () => {
 
-    activateButton(DEFAULT_MODE)
+    activateButton(DEFAULT_MODE);
 }
