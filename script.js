@@ -139,3 +139,8 @@ colorPicker.oninput = function(){
 const shaderBtn = document.querySelector('.shader');
 shaderBtn.onclick = () => setCurrentMode('shade');
 
+
+window.onload = () => {
+    setupGrid(DEFAULT_SIZE)
+    activateButton(DEFAULT_MODE)
+}

@@ -10,23 +10,22 @@
 </head>
 <body>
     <h1 id = "title">Analogue Spirit</h1>
-    <div id="headers">
-        <button class = "clear">Restart</button>
-        <button class = "colorBtn">Color Mode</button>
-        <input id="colorPicker" type="color" value="#333333"/>
-        <button class = "rainbowBtn">Rainbow Mode</button>
-        <button class = "shader">Shader Mode</button>
-        <button class = "eraser">Eraser</button>
-        <div class = 'density'>
-            <input id = "slider" type = 'range' min = '16' max = '100' value="16" class="slider" id ="myRange">
-            <p>Grid Density: <span id = 'sliderValue'></span></p>
+    <div class = "content">
+        <div id="headers">
+            <input id="colorPicker" type="color" value="#333333"/>
+            <button class = "colorBtn">Color Mode</button>
+            <button class = "rainbowBtn">Rainbow Mode</button>
+            <button class = "shader">Shader Mode</button>
+            <button class = "eraser">Eraser</button>
+            <button class = "clear">Restart</button>
+            <div class = 'density'>
+                <input id = "slider" type = 'range' min = '16' max = '100' value="16" class="slider" id ="myRange">
+                <p>Grid Density: <span id = 'sliderValue'></span></p>
+            </div>
+
         </div>
-
+        <div class="container"></div>
     </div>
-
-
-    <div class="container"></div>
-
     <footer class="footer">
         <p>
             Copyright ©
@@ -35,8 +34,6 @@
             </script>
             mengxihe
         </p>
-        <a href="https://github.com/mengxihe" target="_blank">
-            <i class="fab fa-github"></i></a>
     </footer>
 
     <script src="script.js"></script>
