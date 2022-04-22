@@ -17,6 +17,7 @@ function buildGrid(x) {
         square.addEventListener('mouseover', changeColor);
         square.addEventListener('touchstart', changeColor);
         square.addEventListener('touchmove', changeColor);
+        square.addEventListener('touchend', changeColor);
         square.style = 'background-color: rgba(255, 255, 255, 1)';
         grid.appendChild(square);
         square.dataset.darken = 0;
@@ -165,6 +166,5 @@ function activateButton(newMode) {
 }
 
 window.onload = () => {
-
     activateButton(DEFAULT_MODE);
 }
