@@ -6,7 +6,3 @@ when you can draw with your hands, you are free.
 Visit here:
 ## **[Live Demo](https://mengxihe.github.io/AnalogueSpirit/)**
 
-
-
-
-The style currently was heavily influenced by michalosman.
